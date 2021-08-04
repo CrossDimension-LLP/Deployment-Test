@@ -1,0 +1,10 @@
+spring:
+  data:
+    mongodb:
+      host: octopus-mongodb-service
+      port: 27017
+
+
+server:
+  servlet:
+    context-path: /producer/v1
