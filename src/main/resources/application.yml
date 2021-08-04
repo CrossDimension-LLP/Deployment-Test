@@ -3,6 +3,8 @@ spring:
     mongodb:
       host: octopus-mongodb-service
       port: 27017
+      username: octopus
+      password: octopus
 
 
 server:
