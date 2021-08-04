@@ -5,6 +5,7 @@ spring:
       port: 27017
       username: octopus
       password: octopus
+      database: octopus
 
 
 server:
