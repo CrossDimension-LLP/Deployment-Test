@@ -6,6 +6,7 @@ import com.octopus.microservicetest1.service.interfaces.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 
 public class UserService implements IUserService {
+    /** Service implementation */
 
     @Autowired
     private IUserRepository userRepository;
