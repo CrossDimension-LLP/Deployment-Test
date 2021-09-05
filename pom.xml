@@ -22,6 +22,11 @@
 			<artifactId>spring-boot-starter-data-mongodb</artifactId>
 		</dependency>
 		<dependency>
+			<groupId>in.octopus-solutions</groupId>
+			<artifactId>nucleus</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-mongodb-reactive</artifactId>
 		</dependency>
@@ -62,6 +67,21 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>com.spotify</groupId>
+				<artifactId>dockerfile-maven-plugin</artifactId>
+				<version>1.4.3</version>
+				<executions>
+					<execution>
+						<id>default</id>
+					</execution>
+				</executions>
+				<configuration>
+					<classifier>execution</classifier>
+					<repository>docker.io/project360/nuclea</repository>
+					<tag>latest</tag>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
